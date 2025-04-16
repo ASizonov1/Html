@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин одежды</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Магазин одежды</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#products">Товары</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать в наш магазин!</h2>
+            <p>Лучшие товары по самым низким ценам.</p>
+        </section>
+
+        <section id="products">
+            <h2>Наши товары</h2>
+            <div class="product">
+                <h3>Футболка</h3>
+                <p>Цена: 500 руб.</p>
+                <button onclick="addToCart('Футболка', 500)">Добавить в корзину</button>
+            </div>
+            <div class="product">
+                <h3>Джинсы</h3>
+                <p>Цена: 1500 руб.</p>
+                <button onclick="addToCart('Джинсы', 1500)">Добавить в корзину</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Email: shop@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Магазин одежды</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
